@@ -6,7 +6,7 @@ Nuxt 3 服务端渲染 (SSR) 和全栈开发启动模板，支持 I18n、UnoCSS�
 
 - [在线演示](https://starter-nuxt3.netlify.app/)
 - [在 Stackblitz 上试用](https://stackblitz.com/github/starter-collective/starter-nuxt3)
-- [简体中文的 README](./README.zh-CN.md)
+- [英语的 README](./README.md)
 
 ## 特性
 
@@ -68,7 +68,7 @@ pnpm i # 如果你没有安装 pnpm，运行：npm install -g pnpm
 使用此模板时，请按照以下检查列表正确更新信息：
 
 - [ ] 更改 `app/locales/*.json` 和 `nuxt.config.ts` 中的应用标题。
-- [ ] 更改 `public` 中的 favicon，并移除预览图片。
+- [ ] 更改 `public` 中的 favicon 和 logo 图标。
 
 ## 许可证
 

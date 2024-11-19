@@ -6,7 +6,7 @@ Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL a
 
 - [Live Demo](https://starter-nuxt3.netlify.app/)
 - [Play on Stackblitz](https://stackblitz.com/github/starter-collective/starter-nuxt3)
-- [README for 简体中文](./README.zh-CN.md)
+- [README for 中文](./README.zh.md)
 
 ## Features
 
@@ -68,7 +68,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 When you use this template, try follow the checklist to update your info properly:
 
 - [ ] Change the app title in `app/locales/*.json` and `nuxt.config.ts`.
-- [ ] Change the favicon in `public` and remove preview image.
+- [ ] Change the favicon and logo icon in `public`.
 
 ## License
 
