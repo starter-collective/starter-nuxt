@@ -1,11 +1,11 @@
 # Nuxt 3 Starter Template
 
-[![Version](https://img.shields.io/github/v/release/templates-collective/starter-nuxt3?style=flat&label=%20&color=%230d0d0d)](https://github.com/templates-collective/starter-nuxt3/releases)
+[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=%20&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
 
 Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.
 
 - [Live Demo](https://starter-nuxt3.netlify.app/)
-- [Play on Stackblitz](https://stackblitz.com/github/templates-collective/starter-nuxt3)
+- [Play on Stackblitz](https://stackblitz.com/github/starter-collective/starter-nuxt3)
 - [README for 简体中文](./README.zh-CN.md)
 
 ## Features
@@ -19,13 +19,9 @@ Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL a
 - Unit Testing with [Vitest](https://github.com/vitest-dev/vitest).
 - Deploy on [Netlify](https://app.netlify.com/) with zero-config, supports other deployment methods as well.
 
-## Preview
-
-[![Preview Image](https://github.com/templates-collective/.github/blob/main/preview/starter-nuxt3.png)](https://starter-nuxt3.netlify.app/)
-
 ## Usage
 
-[Create a repo](https://github.com/templates-collective/starter-nuxt3/generate) from this template on GitHub.
+[Create a repo](https://github.com/starter-collective/starter-nuxt3/generate) from this template on GitHub.
 
 ```bash
 git clone <git remote url>
@@ -62,7 +58,7 @@ pnpm preview
 If you prefer to do it manually with the cleaner git history:
 
 ```bash
-npx degit templates-collective/starter-nuxt3 starter-nuxt3
+npx degit starter-collective/starter-nuxt3 starter-nuxt3
 
 cd starter-nuxt3
 

@@ -1,11 +1,11 @@
 # Nuxt 3 启动模板
 
-[![Version](https://img.shields.io/github/v/release/templates-collective/starter-nuxt3?style=flat&label=%20&color=%230d0d0d)](https://github.com/templates-collective/starter-nuxt3/releases)
+[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=%20&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
 
 Nuxt 3 服务端渲染 (SSR) 和全栈开发启动模板，支持 I18n、UnoCSS、Prisma、MySQL，并提供更好的 SEO 优化。
 
 - [在线演示](https://starter-nuxt3.netlify.app/)
-- [在 Stackblitz 上试用](https://stackblitz.com/github/templates-collective/starter-nuxt3)
+- [在 Stackblitz 上试用](https://stackblitz.com/github/starter-collective/starter-nuxt3)
 - [简体中文的 README](./README.zh-CN.md)
 
 ## 特性
@@ -19,13 +19,9 @@ Nuxt 3 服务端渲染 (SSR) 和全栈开发启动模板，支持 I18n、UnoCSS�
 - 使用 [Vitest](https://github.com/vitest-dev/vitest) 进行单元测试。
 - 零配置部署到 [Netlify](https://app.netlify.com/)，支持其他部署方式。
 
-## 预览
-
-[![预览图片](https://github.com/templates-collective/.github/blob/main/preview/starter-nuxt3.png)](https://starter-nuxt3.netlify.app/)
-
 ## 使用方法
 
-从 GitHub 上 [创建一个仓库](https://github.com/templates-collective/starter-nuxt3/generate) 基于此模板。
+从 GitHub 上 [创建一个仓库](https://github.com/starter-collective/starter-nuxt3/generate) 基于此模板。
 
 ```bash
 git clone <git 远程地址>
@@ -62,7 +58,7 @@ pnpm preview
 如果你更喜欢手动操作并保持更清晰的 git 历史记录：
 
 ```bash
-npx degit templates-collective/starter-nuxt3 starter-nuxt3
+npx degit starter-collective/starter-nuxt3 starter-nuxt3
 
 cd starter-nuxt3
 
