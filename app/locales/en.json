@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Vite + Vue 3 Starter Template",
-    "description": "Vite + Vue 3 SPA Starter Template, supports I18n, UnoCSS, Axios, File Routing and API auto-import."
+    "title": "Nuxt 3 Starter Template",
+    "description": "Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO."
   },
   "page": {
     "index": {
