@@ -6,7 +6,7 @@ export default defineNuxtConfig({
       title: 'Nuxt 3 Starter Template',
       viewport: 'width=device-width,initial-scale=1',
       link: [
-        { rel: 'icon', href: '/favicon.ico', sizes: '32x32' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'icon', type: 'image/png', href: '/logo.png' },
       ],
       meta: [
@@ -78,11 +78,11 @@ export default defineNuxtConfig({
   // https://i18n.nuxtjs.org/
   i18n: {
     defaultLocale: 'en',
-    langDir: 'locales',
+    langDir: './locales',
+    vueI18n: './i18n/vue-i18n.config.ts',
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'zh', file: 'zh.json', name: '中文' },
     ],
-    vueI18n: './i18n.config.ts',
   },
 })
