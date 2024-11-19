@@ -1,18 +1,18 @@
 <script lang="ts" setup>
+import { getTodoListApi, type TodoList } from '@/apis/todo'
+
 definePageMeta({
   name: 'Index',
   layout: 'page',
 })
 
-const route = useRoute()
-
 const { t } = useI18n()
 
-useHead({
-  title: t('page.index.title'),
-})
+const { headerLogo } = storeToRefs(useLayoutStore())
 
-const todoList = ref<any[]>([])
+const { toggleLogo } = useLayoutStore()
+
+const todoList = ref<TodoList>([])
 
 const emptyText = ref('')
 
@@ -22,29 +22,37 @@ function fetchData() {
   if (loading.value)
     return
   loading.value = true
-  const { data } = useLazyFetch('/api/todo')
-  // eslint-disable-next-line no-console
-  console.log(data.value)
+  getTodoListApi().then((res) => {
+    todoList.value = res.data
+  }).catch((err) => {
+    emptyText.value = err.message
+  }).finally(() => {
+    loading.value = false
+  })
 }
 </script>
 
 <template>
-  <h1 text-center text-lg font-bold mb-5>
-    {{ route.meta.title }}
-  </h1>
-  <div flex justify-center items-center my-5>
-    <TheButton lh-4 @click="fetchData">
-      <img v-show="loading" mr-2 src="@/assets/loading.svg">
-      {{ t('page.index.get-todo-list') }}
+  <TheCard my-5>
+    <TheButton mx-auto mb-5 @click="toggleLogo">
+      {{ headerLogo ? t('button.hide-logo') : t('button.show-logo') }}
     </TheButton>
-  </div>
-  <ul v-if="todoList && todoList.length > 0" my-5 h-50 overflow-y-auto>
-    <li v-for="item in todoList" :key="item.id" text-base lh-normal>
-      <input type="checkbox" accent-primary>
-      {{ item.title }}
-    </li>
-  </ul>
-  <p v-if="todoList.length === 0" my-5 text-center op-75>
-    {{ emptyText || t('empty') }}
-  </p>
+    <p>
+      {{ t('button.toggle-logo-description') }}
+    </p>
+  </TheCard>
+  <TheCard my-5>
+    <TheButton mx-auto mb-5 :loading @click="fetchData">
+      {{ t('button.request') }}
+    </TheButton>
+    <ul v-if="todoList && todoList.length > 0" w-full my-5 h-30 overflow-y-auto>
+      <li v-for="item in todoList" :key="item.id">
+        <input type="checkbox" accent-primary>
+        {{ item.title }}
+      </li>
+    </ul>
+    <p v-else>
+      {{ emptyText || t('empty') }}
+    </p>
+  </TheCard>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <main w-screen h-screen>
-    <slot />
+  <main>
+    <RouterView />
   </main>
 </template>

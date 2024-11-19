@@ -1,17 +1,14 @@
 {
   "app": {
-    "title": "Nuxt 3 Starter Template",
-    "description": "Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO."
+    "title": "Vite + Vue 3 Starter Template",
+    "description": "Vite + Vue 3 SPA Starter Template, supports I18n, UnoCSS, Axios, File Routing and API auto-import."
   },
   "page": {
     "index": {
-      "title": "Nuxt 3 Starter Template",
-      "get-todo-list": "Get Todo List"
+      "title": "Index Page"
     },
     "about": {
-      "title": "About Page",
-      "show-logo": "Show Logo",
-      "hide-logo": "Hide Logo"
+      "title": "About Page"
     },
     "not-found": {
       "title": "Page Not Found",
@@ -20,10 +17,13 @@
   },
   "button": {
     "back": "Back",
-    "index-page": "Index Page",
-    "about-page": "About Page",
-    "toggle-dark": "Toggle dark mode",
-    "toggle-locale": "Change languages"
+    "index-page": "Index",
+    "about-page": "About",
+    "404-page": "404",
+    "show-logo": "Show Logo",
+    "hide-logo": "Hide Logo",
+    "toggle-logo-description": "Toggle the visibility of the logo",
+    "request": "Request"
   },
   "empty": "No content"
 }

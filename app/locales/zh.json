@@ -1,17 +1,15 @@
 {
   "app": {
-    "title": "Nuxt 3 Starter Template",
-    "description": "Nuxt 3 服务端渲染 & 全栈应用的初始化模板，支持国际化、UnoCSS、Prisma、MySQL，同时提供更好的 SEO。"
+    "title": "Vite + Vue 3 启动模板",
+    "description": "Vite + Vue 3 单页面应用启动模板, 支持国际化、Axios、UnoCSS、文件路由和自动化的 API 导入。"
   },
   "page": {
     "index": {
-      "title": "Nuxt 3 Starter Template",
-      "get-todo-list": "获取待办事项列表"
+      "title": "Vite + Vue 3 启动模板"
     },
     "about": {
-      "title": "关于页面",
-      "show-logo": "显示 Logo",
-      "hide-logo": "隐藏 Logo"
+      "title": "关于",
+      "description": ""
     },
     "not-found": {
       "title": "未找到页面",
@@ -21,9 +19,12 @@
   "button": {
     "back": "返回",
     "index-page": "首页",
-    "about-page": "关于页面",
-    "toggle-dark": "切换暗色模式",
-    "toggle-locale": "切换语言"
+    "about-page": "关于",
+    "404-page": "404",
+    "show-logo": "显示 Logo",
+    "hide-logo": "隐藏 Logo",
+    "toggle-logo-description": "切换 Logo 的可见性",
+    "request": "网络请求"
   },
   "empty": "暂无内容"
 }

@@ -12,13 +12,13 @@ import {
 export default defineConfig({
   theme: {
     colors: {
-      primary: 'var(--primary-color)',
+      primary: '#FF057C',
     },
   },
   shortcuts: [
     {
-      'bg-main': 'bg-neutral-100  dark:bg-neutral-900 ',
-      'text-main': 'text-neutral-900 dark:text-neutral-200',
+      'background-color': 'bg-white  dark:bg-hex-020817',
+      'text-color': 'text-hex-020817 dark:text-hex-fafafa',
     },
   ],
   presets: [
@@ -40,8 +40,5 @@ export default defineConfig({
       },
     }),
   ],
-  transformers: [
-    transformerDirectives(),
-    transformerVariantGroup(),
-  ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 })

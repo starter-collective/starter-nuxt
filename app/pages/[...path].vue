@@ -1,8 +1,4 @@
 <script setup lang="ts">
-definePageMeta({
-  layout: 'default',
-})
-
 const { t } = useI18n()
 
 const router = useRouter()
@@ -18,10 +14,10 @@ function goBack() {
 <template>
   <div w-full h-full flex="~ items-center justify-center col">
     <img w-80 src="@/assets/not-found.svg" alt="404 Image">
-    <h1 text-3xl mt-15 mb-5 font-bold color-dark>
+    <h1 text-3xl mt-15 mb-5 font-bold>
       {{ t('page.not-found.title') }}
     </h1>
-    <p mt-5 mb-15 color-gray-600>
+    <p mt-5 mb-15>
       {{ t('page.not-found.content') }}
     </p>
     <TheButton @click="goBack">
