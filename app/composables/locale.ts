@@ -4,7 +4,7 @@ import type { Locale } from 'vue-i18n'
  * Locale composable for vue-i18n.
  */
 export function useLocale() {
-  const { locale, messages } = useI18n()
+  const { locale, messages, t } = useI18n()
 
   function toggleLocale(_locale?: Locale) {
     if (!_locale) {
@@ -12,6 +12,9 @@ export function useLocale() {
       _locale = locales[(locales.indexOf(locale.value) + 1) % locales.length] as Locale
     }
     locale.value = _locale
+    useHead({
+      title: t('app.title'),
+    })
   }
 
   return {
