@@ -1,6 +1,6 @@
 # Nuxt 3 Starter Template
 
-[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=%20&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
+[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=released&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
 
 Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.
 

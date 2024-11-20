@@ -1,6 +1,6 @@
 # Nuxt 3 启动模板
 
-[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=%20&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
+[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=released&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
 
 Nuxt 3 服务端渲染 (SSR) 和全栈开发启动模板，支持 I18n、UnoCSS、Prisma、MySQL，并提供更好的 SEO 优化。
 
