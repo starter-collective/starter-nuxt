@@ -45,6 +45,7 @@ export default defineNuxtConfig({
     app: {
     },
     public: {
+      requestUrl: '/api',
     },
   },
 
@@ -63,6 +64,7 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/api/nuxt-config#imports
   imports: {
     dirs: [
+      'apis',
       'constants',
       'stores',
     ],
@@ -78,8 +80,7 @@ export default defineNuxtConfig({
   // https://i18n.nuxtjs.org/
   i18n: {
     defaultLocale: 'en',
-    langDir: './locales',
-    vueI18n: './i18n/vue-i18n.config.ts',
+    lazy: true,
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'zh', file: 'zh.json', name: '中文' },

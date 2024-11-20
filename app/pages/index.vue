@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import { getTodoListApi, type TodoList } from '@/apis/todo'
-
 definePageMeta({
   name: 'Index',
   layout: 'page',
@@ -12,23 +10,26 @@ const { headerLogo } = storeToRefs(useLayoutStore())
 
 const { toggleLogo } = useLayoutStore()
 
-const todoList = ref<TodoList>([])
+const todoList = ref<any>([])
 
 const emptyText = ref('')
 
 const loading = ref(false)
 
-function fetchData() {
+async function fetchData() {
   if (loading.value)
     return
   loading.value = true
-  getTodoListApi().then((res) => {
-    todoList.value = res.data
-  }).catch((err) => {
-    emptyText.value = err.message
-  }).finally(() => {
+  try {
+    const res = await $fetch('/api/todos')
+    todoList.value = res
+  }
+  catch (e) {
+    emptyText.value = e as string
+  }
+  finally {
     loading.value = false
-  })
+  }
 }
 </script>
 
