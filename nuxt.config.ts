@@ -64,7 +64,6 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/api/nuxt-config#imports
   imports: {
     dirs: [
-      'apis',
       'constants',
       'stores',
     ],
