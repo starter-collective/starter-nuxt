@@ -5,13 +5,9 @@ const { toggleLocale } = useLocale()
 
 const route = useRoute()
 
-const router = useRouter()
+const localePath = useLocalePath()
 
 const { headerLogo } = storeToRefs(useLayoutStore())
-
-function goPage(path: string) {
-  router.push(path)
-}
 
 function openGithub() {
   window.open(GITHUB_URL)
@@ -27,13 +23,13 @@ function openGithub() {
         <sup><i>v{{ APP_VERSION }}</i></sup>
       </h1>
       <div flex="~ wrap gap-2 justify-center">
-        <TheButton v-if="route.path === '/about'" @click="goPage('/')">
+        <TheButton v-if="route.path === '/about'" @click="localePath('/')">
           {{ t('button.index-page') }}
         </TheButton>
-        <TheButton v-else @click="goPage('/about')">
+        <TheButton v-else @click="localePath('/about')">
           {{ t('button.about-page') }}
         </TheButton>
-        <TheButton @click="goPage('/404')">
+        <TheButton @click="localePath('/404')">
           {{ t('button.404-page') }}
         </TheButton>
         <TheButton @click="toggleLocale()">
@@ -48,7 +44,7 @@ function openGithub() {
       </div>
     </header>
     <main m-auto min-h-32 max-w-full sm:max-w-2xl>
-      <RouterView />
+      <slot />
     </main>
     <footer flex="~ items-center justify-center gap-2" py-8>
       <a :href="LICENSE_URL" target="_blank">MIT License</a>

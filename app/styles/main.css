@@ -30,18 +30,3 @@ p {
 h1 {
   --at-apply: text-6 font-bold my-5;
 }
-
-#nprogress {
-  pointer-events: none;
-}
-
-#nprogress .bar {
-  background: linear-gradient(to right, #FF057C, #7C64D5, #4CC3FF);
-  opacity: 0.75;
-  position: fixed;
-  z-index: 1031;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-}

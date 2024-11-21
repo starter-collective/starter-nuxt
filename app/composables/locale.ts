@@ -1,8 +1,10 @@
 /**
- * Locale composable for vue-i18n.
+ * Locale composable for @nuxtjs/i18n.
+ *
+ * @see https://i18n.nuxtjs.org/
  */
 export function useLocale() {
-  const { locale, setLocale, messages } = useI18n()
+  const { locale, messages, setLocale } = useI18n()
 
   function toggleLocale(_locale?: any) {
     if (!_locale) {

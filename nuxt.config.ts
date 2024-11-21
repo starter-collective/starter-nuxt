@@ -80,7 +80,6 @@ export default defineNuxtConfig({
   // https://i18n.nuxtjs.org/
   i18n: {
     defaultLocale: 'en',
-    lazy: true,
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'zh', file: 'zh.json', name: '中文' },

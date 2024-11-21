@@ -2,6 +2,7 @@
 definePageMeta({
   name: 'Index',
   layout: 'page',
+  title: 'page.index.title',
 })
 
 const { t } = useI18n()
@@ -10,7 +11,13 @@ const { headerLogo } = storeToRefs(useLayoutStore())
 
 const { toggleLogo } = useLayoutStore()
 
-const todoList = ref<any>([])
+interface TodoItem {
+  id: number
+  title: string
+  completed: boolean
+}
+
+const todoList = ref<TodoItem[]>([])
 
 const emptyText = ref('')
 
@@ -21,7 +28,7 @@ async function fetchData() {
     return
   loading.value = true
   try {
-    const res = await $fetch('/api/todos')
+    const res = await $fetch<TodoItem[]>('/api/todos')
     todoList.value = res
   }
   catch (e) {
