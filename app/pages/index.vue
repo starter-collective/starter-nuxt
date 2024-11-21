@@ -4,8 +4,9 @@ import type { TodoList } from '~~/shared/types/todo'
 definePageMeta({
   name: 'Index',
   layout: 'page',
-  title: 'page.index.title',
 })
+
+const runtimeConfig = useRuntimeConfig()
 
 const { t } = useI18n()
 
@@ -24,7 +25,9 @@ async function fetchData() {
     return
   loading.value = true
   try {
-    const res = await $fetch<TodoList>('/api/todos')
+    const res = await $fetch<TodoList>('/todos', {
+      baseURL: runtimeConfig.public.requestBaseUrl,
+    })
     todoList.value = res
   }
   catch (e) {
@@ -37,6 +40,7 @@ async function fetchData() {
 </script>
 
 <template>
+  {{ runtimeConfig }}
   <TheCard my-5>
     <TheButton mx-auto mb-5 @click="toggleLogo">
       {{ headerLogo ? t('button.hide-logo') : t('button.show-logo') }}

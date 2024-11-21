@@ -43,9 +43,10 @@ export default defineNuxtConfig({
   // https://nuxt.com/docs/api/nuxt-config#runtimeconfig-1
   runtimeConfig: {
     app: {
+      baseUrl: '/',
     },
     public: {
-      requestUrl: '/api',
+      requestBaseUrl: '/api',
     },
   },
 

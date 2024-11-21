@@ -2,7 +2,6 @@
 definePageMeta({
   name: 'About',
   layout: 'page',
-  title: 'page.about.title',
 })
 
 const { t } = useI18n()

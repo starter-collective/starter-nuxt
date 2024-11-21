@@ -5,8 +5,6 @@ const { toggleLocale } = useLocale()
 
 const route = useRoute()
 
-const localePath = useLocalePath()
-
 const { headerLogo } = storeToRefs(useLayoutStore())
 
 function openGithub() {
@@ -23,13 +21,13 @@ function openGithub() {
         <sup><i>v{{ APP_VERSION }}</i></sup>
       </h1>
       <div flex="~ wrap gap-2 justify-center">
-        <TheButton v-if="route.path === '/about'" @click="localePath('/')">
+        <TheButton v-if="route.path === '/about'" @click="navigateTo('/')">
           {{ t('button.index-page') }}
         </TheButton>
-        <TheButton v-else @click="localePath('/about')">
+        <TheButton v-else @click="navigateTo('/about')">
           {{ t('button.about-page') }}
         </TheButton>
-        <TheButton @click="localePath('/404')">
+        <TheButton @click="navigateTo('/404')">
           {{ t('button.404-page') }}
         </TheButton>
         <TheButton @click="toggleLocale()">
