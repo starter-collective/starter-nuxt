@@ -47,11 +47,17 @@ To build the App, you can run:
 pnpm build
 ```
 
-You will then see the `dist` folder generated for publishing, which you can preview locally with the following command.
+You will then see the `.output` folder generated for publishing, which you can preview locally with the following command.
 
 ```bash
 pnpm preview
 ```
+
+## Deployment
+
+Nuxt application can be deployed on a Node.js server, pre-rendered for static hosting, or deployed to serverless or edge (CDN) environments.
+
+[How to deploy?](https://nuxt.com/docs/getting-started/deployment)
 
 ## Clean Template
 
@@ -67,7 +73,7 @@ pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 
 When you use this template, try follow the checklist to update your info properly:
 
-- [ ] Change the app title in `app/locales/*.json` and `nuxt.config.ts`.
+- [ ] Change the app title in `i18n/locales/*.json` and `nuxt.config.ts`.
 - [ ] Change the favicon and logo icon in `public`.
 
 ## License

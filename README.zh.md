@@ -47,11 +47,17 @@ pnpm dev
 pnpm build
 ```
 
-构建后会生成 `dist` 文件夹，你可以使用以下命令进行本地预览。
+构建后会生成 `.output` 文件夹，你可以使用以下命令进行本地预览。
 
 ```bash
 pnpm preview
 ```
+
+## 部署
+
+Nuxt 应用可以部署在 Node.js 服务器上，预渲染用于静态托管，或部署到无服务器或边缘（CDN）环境。
+
+[如何部署？](https://nuxt.com/docs/getting-started/deployment)
 
 ## 清理模板
 
@@ -67,7 +73,7 @@ pnpm i # 如果你没有安装 pnpm，运行：npm install -g pnpm
 
 使用此模板时，请按照以下检查列表正确更新信息：
 
-- [ ] 更改 `app/locales/*.json` 和 `nuxt.config.ts` 中的应用标题。
+- [ ] 更改 `i18n/locales/*.json` 和 `nuxt.config.ts` 中的应用标题。
 - [ ] 更改 `public` 中的 favicon 和 logo 图标。
 
 ## 许可证

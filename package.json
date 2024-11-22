@@ -14,6 +14,8 @@
     "prepare": "simple-git-hooks",
     "postinstall": "nuxi prepare",
     "dev": "nuxi dev --host --dotenv .env.development",
+    "dev:test": "nuxi dev --dotenv .env.testing",
+    "build:test": "nuxi dev --host --dotenv .env.testing",
     "build": "nuxi build --dotenv .env.production",
     "preview": "nuxi preview",
     "test": "vitest",
