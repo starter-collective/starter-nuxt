@@ -40,7 +40,6 @@ async function fetchData() {
 </script>
 
 <template>
-  {{ runtimeConfig }}
   <TheCard my-5>
     <TheButton mx-auto mb-5 @click="toggleLogo">
       {{ headerLogo ? t('button.hide-logo') : t('button.show-logo') }}
