@@ -5,6 +5,14 @@ definePageMeta({
 })
 
 const { t } = useI18n()
+
+const title = computed(() => {
+  return t('page.about.title')
+})
+
+useSeoMeta({
+  title,
+})
 </script>
 
 <template>

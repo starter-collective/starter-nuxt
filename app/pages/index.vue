@@ -10,6 +10,14 @@ const runtimeConfig = useRuntimeConfig()
 
 const { t } = useI18n()
 
+const title = computed(() => {
+  return t('page.index.title')
+})
+
+useSeoMeta({
+  title,
+})
+
 const { headerLogo } = storeToRefs(useLayoutStore())
 
 const { toggleLogo } = useLayoutStore()
