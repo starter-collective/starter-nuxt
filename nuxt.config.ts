@@ -80,6 +80,9 @@ export default defineNuxtConfig({
   // https://i18n.nuxtjs.org/
   i18n: {
     defaultLocale: 'en',
+    // If you don't need the prefix strategy, you can remove the strategy option.
+    // And you can remove `useLocalePath` in `src` directory.
+    strategy: 'prefix_and_default',
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'zh', file: 'zh.json', name: '中文' },

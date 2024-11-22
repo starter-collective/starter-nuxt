@@ -25,7 +25,7 @@ async function fetchData() {
     return
   loading.value = true
   try {
-    const res = await $fetch<TodoList>('/todos', {
+    const res = await $fetch<TodoList>('/todo', {
       baseURL: runtimeConfig.public.requestBaseUrl,
     })
     todoList.value = res
