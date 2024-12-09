@@ -1,7 +1,7 @@
 {
   "name": "starter-nuxt3",
   "type": "module",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "packageManager": "pnpm@9.10.0",
   "description": "Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.",
   "author": "Kieran Wong <kieranwv@gmail.com> (https://github.com/kieranwv/)",
