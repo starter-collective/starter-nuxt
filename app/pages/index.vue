@@ -6,6 +6,8 @@ definePageMeta({
   layout: 'page',
 })
 
+const router = useRouter()
+
 const runtimeConfig = useRuntimeConfig()
 
 const { t } = useI18n()
@@ -45,20 +47,48 @@ async function fetchData() {
     loading.value = false
   }
 }
+
+function goPage(path: string) {
+  router.push(path)
+}
+
+function goDynamicRoute() {
+  goPage(`/dynamic/${Math.random().toString().slice(2, 6)}`)
+}
 </script>
 
 <template>
   <TheCard my-5>
+    <div flex="~ items-center justify-center gap-2 wrap" mx-auto mb-5>
+      <TheButton @click="goPage('/')">
+        {{ t('button.index-page') }}
+      </TheButton>
+      <TheButton @click="goPage('/about')">
+        {{ t('button.about-page') }}
+      </TheButton>
+      <TheButton @click="goPage('/404')">
+        {{ t('button.404-page') }}
+      </TheButton>
+      <TheButton @click="goDynamicRoute">
+        {{ t('button.dynamic-route') }}
+      </TheButton>
+    </div>
+    <p>
+      {{ t('button.dynamic-route-description') }}
+    </p>
+  </TheCard>
+  <TheCard my-5>
     <TheButton mx-auto mb-5 @click="toggleLogo">
       {{ headerLogo ? t('button.hide-logo') : t('button.show-logo') }}
     </TheButton>
-    <p>
-      {{ t('button.toggle-logo-description') }}
+    <p flex="~ items-center justify-center gap-2">
+      <i i-logos-pinia />
+      <span>{{ t('button.toggle-logo-description') }}</span>
     </p>
   </TheCard>
   <TheCard my-5>
     <TheButton mx-auto mb-5 :loading @click="fetchData">
-      {{ t('button.request') }}
+      {{ t('button.axios-request') }}
     </TheButton>
     <ul v-if="todoList && todoList.length > 0" w-full my-5 h-30 overflow-y-auto>
       <li v-for="item in todoList" :key="item.id">

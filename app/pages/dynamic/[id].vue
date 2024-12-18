@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 definePageMeta({
-  name: 'about',
+  name: 'dynamic',
   layout: 'page',
 })
 
@@ -8,11 +8,13 @@ const { t } = useI18n()
 
 const { back } = useBack()
 
+const route = useRoute()
+
 const title = computed(() => {
-  return t('page.about.title')
+  return (route.params.id as string) || ''
 })
 
-useSeoMeta({
+useHead({
   title,
 })
 </script>
@@ -20,10 +22,13 @@ useSeoMeta({
 <template>
   <TheCard>
     <h2 text-center text-lg font-bold mb-5>
-      {{ t('page.about.title') }}
+      Hi, {{ route.params.id }}
     </h2>
     <p>
-      {{ t('app.description') }}
+      Read more about dynamic routing in the
+      <a target="_blank" href="https://uvr.esm.is/guide/file-based-routing.html#dynamic-routes">
+        https://uvr.esm.is/guide/file-based-routing.html#dynamic-routes
+      </a>
     </p>
     <TheButton mx-auto mt-4 @click="back()">
       <i i-carbon-return mr-2 />

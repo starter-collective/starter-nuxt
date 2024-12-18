@@ -1,12 +1,13 @@
 # Nuxt 3 Starter Template
 
-[![Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?style=flat&label=released&color=%230d0d0d)](https://github.com/starter-collective/starter-nuxt3/releases)
+[![GitHub Release Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?label=Release&color=%42b883)](https://github.com/starter-collective/starter-nuxt3/releases)
+[![Build Status](https://github.com/starter-collective/starter-nuxt3/actions/workflows/ci.yml/badge.svg?branch=main&color=%42b883)](https://github.com/starter-collective/starter-nuxt3/actions/workflows/ci.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6b182d34-7d30-4206-aad9-9789d1c8ed11/deploy-status)](https://app.netlify.com/sites/starter-nuxt3/deploys)
 
 Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.
 
 - [Live Demo](https://starter-nuxt3.netlify.app/)
 - [Play on Stackblitz](https://stackblitz.com/github/starter-collective/starter-nuxt3)
-- [README for 中文](./README.zh.md)
 
 ## Features
 

@@ -16,7 +16,7 @@ useHead({
 
 <template>
   <div>
-    <NuxtLoadingIndicator color="linear-gradient(to right, #FF057C, #7C64D5, #4CC3FF)" />
+    <NuxtLoadingIndicator color="#42b883" />
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
