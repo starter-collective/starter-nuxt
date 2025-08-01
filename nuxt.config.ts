@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     // SEO config.
     // https://nuxt.com/docs/api/nuxt-config#head
     head: {
-      title: 'Nuxt 3 Starter Template',
+      title: 'Nuxt Starter Template',
       viewport: 'width=device-width,initial-scale=1',
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -11,18 +11,9 @@ export default defineNuxtConfig({
       ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.' },
+        { name: 'description', content: 'Nuxt SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.' },
       ],
     },
-  },
-
-  // Specify a compatibility date for your app.
-  compatibilityDate: '2024-09-09',
-
-  // Enable early access to Nuxt v4 features or flags.
-  // https://nuxt.com/docs/api/nuxt-config#compatibilityversion
-  future: {
-    compatibilityVersion: 4,
   },
 
   // Enable server-side rendering.

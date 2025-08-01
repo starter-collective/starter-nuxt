@@ -1,9 +1,9 @@
 {
-  "name": "starter-nuxt3",
+  "name": "starter-nuxt",
   "type": "module",
   "version": "0.6.1",
   "packageManager": "pnpm@9.10.0",
-  "description": "Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.",
+  "description": "Nuxt SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.",
   "author": "Kieran Wong <kieranwv@gmail.com> (https://github.com/kieranwv/)",
   "license": "MIT",
   "engines": {
@@ -24,40 +24,49 @@
     "release": "bumpp"
   },
   "dependencies": {
-    "@iconify-json/carbon": "^1.2.5",
-    "@nuxtjs/i18n": "^9.1.1",
-    "@pinia/nuxt": "^0.9.0",
-    "@prisma/client": "6.1.0",
-    "@unocss/nuxt": "^0.65.3",
-    "@unocss/reset": "^0.65.3",
-    "@vueuse/core": "^12.2.0",
-    "@vueuse/nuxt": "^12.2.0",
-    "nuxt": "^3.15.0",
+    "@iconify-json/carbon": "^1.2.11",
+    "@nuxtjs/i18n": "^10.0.3",
+    "@pinia/nuxt": "^0.11.2",
+    "@prisma/client": "6.13.0",
+    "@unocss/nuxt": "^66.3.3",
+    "@unocss/reset": "^66.3.3",
+    "@vueuse/core": "^13.6.0",
+    "@vueuse/nuxt": "^13.6.0",
+    "nuxt": "^4.0.2",
     "nuxt-lodash": "^2.5.3",
-    "pinia": "^2.3.0",
-    "prisma": "^6.1.0",
-    "unocss": "^0.65.3",
-    "vue": "^3.5.13"
+    "pinia": "^3.0.3",
+    "prisma": "^6.13.0",
+    "unocss": "^66.3.3",
+    "vue": "^3.5.18"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.1",
-    "@nuxt/test-utils": "^3.15.1",
+    "@antfu/eslint-config": "^5.0.0",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@nuxt/test-utils": "^3.19.2",
     "@types/jsdom": "^21.1.7",
-    "@types/node": "^22.10.2",
+    "@types/node": "^24.1.0",
     "@vue/test-utils": "^2.4.6",
-    "bumpp": "^9.9.2",
-    "eslint": "^9.17.0",
-    "jsdom": "^25.0.1",
-    "lint-staged": "^15.3.0",
+    "bumpp": "^10.2.1",
+    "commitlint": "^19.8.1",
+    "conventional-changelog": "^7.1.1",
+    "eslint": "^9.32.0",
+    "jsdom": "^26.1.0",
+    "lint-staged": "^16.1.2",
     "rimraf": "^6.0.1",
-    "simple-git-hooks": "^2.11.1",
-    "typescript": "^5.7.2",
-    "vitest": "^2.1.8"
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   },
   "simple-git-hooks": {
+    "commit-msg": "npx commitlint --edit",
     "pre-commit": "pnpm lint-staged"
   },
   "lint-staged": {
     "*": "pnpm lint:fix"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }

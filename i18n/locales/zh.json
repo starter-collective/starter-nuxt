@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Nuxt 3 启动模板",
-    "description": "Nuxt 3 服务端渲染 (SSR) 和全栈开发启动模板，支持 I18n、UnoCSS、Prisma、MySQL，并提供更好的 SEO 优化。"
+    "title": "Nuxt 启动模板",
+    "description": "Nuxt 服务端渲染 (SSR) 和全栈开发启动模板，支持 I18n、UnoCSS、Prisma、MySQL，并提供更好的 SEO 优化。"
   },
   "page": {
     "index": {

@@ -3,7 +3,7 @@ import { version } from '../../package.json'
 /**
  * The key of the application.
  */
-export const APP_KEY = 'starter-nuxt3'
+export const APP_KEY = 'starter-nuxt'
 
 /**
  * The version of the application.
@@ -23,7 +23,7 @@ export const AUTHOR_URL = 'https://github.com/kieranwv'
 /**
  * The url of the GitHub repository.
  */
-export const GITHUB_URL = 'https://github.com/starter-collective/starter-nuxt3'
+export const GITHUB_URL = 'https://github.com/starter-collective/starter-nuxt'
 
 /**
  * The license url of the application.

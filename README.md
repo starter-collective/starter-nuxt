@@ -1,17 +1,17 @@
-# Nuxt 3 Starter Template
+# Nuxt Starter Template
 
-[![GitHub Release Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt3?label=Release&color=%42b883)](https://github.com/starter-collective/starter-nuxt3/releases)
-[![Build Status](https://github.com/starter-collective/starter-nuxt3/actions/workflows/ci.yml/badge.svg?branch=main&color=%42b883)](https://github.com/starter-collective/starter-nuxt3/actions/workflows/ci.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/6b182d34-7d30-4206-aad9-9789d1c8ed11/deploy-status)](https://app.netlify.com/sites/starter-nuxt3/deploys)
+[![GitHub Release Version](https://img.shields.io/github/v/release/starter-collective/starter-nuxt?label=Release&color=%42b883)](https://github.com/starter-collective/starter-nuxt/releases)
+[![Build Status](https://github.com/starter-collective/starter-nuxt/actions/workflows/ci.yml/badge.svg?branch=main&color=%42b883)](https://github.com/starter-collective/starter-nuxt/actions/workflows/ci.yml)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6b182d34-7d30-4206-aad9-9789d1c8ed11/deploy-status)](https://app.netlify.com/sites/starter-nuxt/deploys)
 
-Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.
+Nuxt SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO.
 
-- [Live Demo](https://starter-nuxt3.netlify.app/)
-- [Play on Stackblitz](https://stackblitz.com/github/starter-collective/starter-nuxt3)
+- [Live Demo](https://starter-nuxt.netlify.app/)
+- [Play on Stackblitz](https://stackblitz.com/github/starter-collective/starter-nuxt)
 
 ## Features
 
-- [Nuxt 3](https://nuxt.com/) - SSR, File-based routing, components auto importing, modules, etc.
+- [Nuxt](https://nuxt.com/) - SSR, File-based routing, components auto importing, modules, etc.
 - Full-stack development with [Prisma](https://www.prisma.io/) and [MySQL](https://www.mysql.com/).
 - State Management via [Pinia](https://github.com/vuejs/pinia), see [/app/stores/layout.ts](./app/stores/layout.ts).
 - Provide good [SEO](https://nuxt.com/docs/getting-started/seo-meta) for your website with powerful head config, composables and components.
@@ -22,7 +22,7 @@ Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL a
 
 ## Usage
 
-[Create a repo](https://github.com/starter-collective/starter-nuxt3/generate) from this template on GitHub.
+[Create a repo](https://github.com/starter-collective/starter-nuxt/generate) from this template on GitHub.
 
 ```bash
 git clone <git remote url>
@@ -31,7 +31,7 @@ git clone <git remote url>
 Install dependencies.
 
 ```bash
-cd starter-nuxt3 # Or your project directory
+cd starter-nuxt # Or your project directory
 
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
@@ -65,9 +65,9 @@ Nuxt application can be deployed on a Node.js server, pre-rendered for static ho
 If you prefer to do it manually with the cleaner git history:
 
 ```bash
-npx degit starter-collective/starter-nuxt3 starter-nuxt3
+npx degit starter-collective/starter-nuxt starter-nuxt
 
-cd starter-nuxt3
+cd starter-nuxt
 
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```

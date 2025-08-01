@@ -1,7 +1,7 @@
 {
   "app": {
-    "title": "Nuxt 3 Starter Template",
-    "description": "Nuxt 3 SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO."
+    "title": "Nuxt Starter Template",
+    "description": "Nuxt SSR & full-stack starter template, supports I18n, UnoCSS, Prisma, MySQL and provides better SEO."
   },
   "page": {
     "index": {
